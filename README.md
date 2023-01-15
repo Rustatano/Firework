@@ -4,4 +4,4 @@
 
 - Controls:
 
-   > fire -> space
+   fire -> space
