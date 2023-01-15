@@ -20,7 +20,7 @@ def particle_move(particles: list, window, BLACK: tuple, fade: int) -> None:
               particle[1][particle[1].index(rgb)] -= fade
         pg.draw.rect(window, particle[1], particle[0])
     pg.time.wait(50)
-    pg.display.flip() #DIFFERENCE BETWEEN flip() AND update() ????????????
+    pg.display.flip()
 
 
 def particle_generator(particle_count: int, shot: object, particle_height: int, particle_width: int) -> list:
@@ -28,9 +28,9 @@ def particle_generator(particle_count: int, shot: object, particle_height: int, 
     particles = []
     for i in range(particle_count):
         x = r.randint(-20, 20)
-        y = int((20 * 20 - x * x) ** 0.5) #PYTHAGORAS' THEOREM :D
+        y = int((20 * 20 - x * x) ** 0.5)
         y = r.randint(-y, y)
-        particles.append([Rect(shot.left + r.randint(0, 5), shot.bottom, particle_height, particle_width), color(), x, y]) #0 - RECT; 1 - color; 2 - x; 3 - y
+        particles.append([Rect(shot.left + r.randint(0, 5), shot.bottom, particle_height, particle_width), color(), x, y])
     return particles
 
 
