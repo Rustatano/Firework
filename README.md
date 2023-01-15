@@ -1,7 +1,7 @@
-Firework
+# Firework
 
-Pygame is needed to be installed
+- Pygame is needed to be installed
 
-Controls:
+- Controls:
 
-fire -> space
+   > fire -> space
